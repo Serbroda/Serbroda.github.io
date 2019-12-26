@@ -30,9 +30,9 @@ twitter_username: Serbroda
 github_username:  Serbroda
 
 # Build settings
-theme: none
-plugins:
-  - jekyll-feed
+# theme: none
+# plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
