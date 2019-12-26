@@ -1,28 +1,39 @@
 body {
-    background-image: url('/assets/img/background.jpg');
-    
-    /* Image is centered vertically and horizontally at all times */
-    background-position: center center;
-    
-    /* Image doesn't repeat */
-    background-repeat: no-repeat;
-    
-    /* Makes the image fixed in the viewport so that it doesn't move when 
-       the content height is greater than the image height */
-    background-attachment: fixed;
-    
-    /* This is what makes the background image rescale based on its container's size */
-    background-size: cover;
-    
-    /* Pick a solid background color that will be displayed while the background image is loading */
-    background-color:#464646;
-   }
-  
-  /* For mobile devices */
-  @media only screen and (max-width: 767px) {
-    body {
-      /* The file size of this background image is 93% smaller
-       * to improve page load speed on mobile internet connections */
-       background-image: url('/assets/img/background.jpg');
-    }
+   background: linear-gradient(145deg, #2C2D32, #3C3E4C);
 }
+
+.bg-container {
+   padding: 12px;
+   background-color: #151718;
+   border-radius: 6px;
+   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   margin: 40px;
+ }
+ .bg-container-content {
+   min-height: 80vh;
+ }
+ .background-sky {
+     background-color: #1976d2;
+     background: linear-gradient(145deg,#3A7E98,#7AE8B5);
+     color: red;
+     z-index: -1000;
+     margin-top: -80px; 
+ }
+ .hero {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     width: 100%;
+     min-height: 480px;
+     height: 80vh;
+     max-height: 560px;
+     box-sizing: border-box;
+     padding: 48px 48px 32px;
+     overflow: hidden;
+     -webkit-transform: skewY(4deg);
+     transform: skewY(4deg);
+     -webkit-transform-origin: 100%;
+     transform-origin: 100%;
+ }
