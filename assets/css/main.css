@@ -12,6 +12,7 @@ body {
  .bg-container-content {
    min-height: 80vh;
    color: white;
+   padding-top: 20px;
  }
  .background-sky {
      background-color: #1976d2;
