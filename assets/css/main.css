@@ -5,15 +5,8 @@ body {
    background: linear-gradient(145deg, #2C2D32, #3C3E4C);
 }
 
-@media (min-width: 992px) { 
-    .navbar {
-        height: 35px !important; 
-    }
-}
-
-
-.navbar * {
-    font-size: 0.95em !important;
+.navbar *, .navbar-brand {
+    font-size: 13px !important;
 }
 
 .navbar.bg-dark {
@@ -23,22 +16,6 @@ body {
     box-shadow: 0px 0px 8px 2px #000000 !important;
 }
 
-/*.tool-menu {
-    color: white;
-    border-bottom: 1px solid black;
-    min-height: 35px !important; 
-    height: 35px !important; 
-    padding: 0px !important;
-    background: linear-gradient(#2b2b2b, #202020);
-    -webkit-box-shadow: 0px 0px 8px 2px #000000;
-    -moz-box-shadow: 0px 0px 8px 2px #000000;
-    box-shadow: 0px 0px 8px 2px #000000;
-}
-
-.tool-menu * {
-    font-size: 0.9em !important;
-}*/
-
 .bg-container {
    padding: 12px;
    background-color: #151718;
@@ -46,6 +23,7 @@ body {
    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    margin: 40px;
  }
+
  .bg-container-header {
      min-height: 20px;
  }
@@ -84,11 +62,15 @@ body {
      transform-origin: 100%;
  }
 
- .menu-item {
-     margin-left: 6px;
-     margin-right: 6px;
-     font-size: 0.9em;
- }
- .menu-item.active {
-     font-weight: bold;
- }
+ /* MEDIA QUERIES */
+ @media (min-width: 992px) { 
+    .navbar {
+        height: 35px !important; 
+    }
+}
+
+ @media (max-width: 991px) { 
+    .bg-container {
+        margin: 20px;
+      }
+}
